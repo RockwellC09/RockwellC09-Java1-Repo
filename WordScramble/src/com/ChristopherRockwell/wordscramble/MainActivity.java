@@ -52,17 +52,16 @@ public class MainActivity extends Activity {
             		}
             	} else {
             		// check to see if word was unscrambled correctly
-            		checkWords();
+            		checkWords(unscrWordsArray[count].toString());
             	}
             }
         });
     }
     
  // create function/method that checks to see if words are correctly unscrambled
-    void checkWords() {
-    	String word1 = myEditText.getText().toString().toLowerCase();
-    	String word2 = unscrWordsArray[count].toString();
-    	if (word1.equals(word2)) {
+    void checkWords(String word1) {
+    	String word2 = myEditText.getText().toString().toLowerCase();
+    	if (word2.equals(word1)) {
     		score++;
     		myScore.setText(score + "/7 Correct");
     		
@@ -91,7 +90,7 @@ public class MainActivity extends Activity {
             builder1.show();
             myEditText.setText("");
           // check for blank editText
-    	} else if (word1.trim().equals("")) {
+    	} else if (word2.trim().equals("")) {
     		// create blank editText alert dialog
     		AlertDialog.Builder builder2 = new AlertDialog.Builder(MainActivity.this);
             builder2.setTitle("No Answer");
