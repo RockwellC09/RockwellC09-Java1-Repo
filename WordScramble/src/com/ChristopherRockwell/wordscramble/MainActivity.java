@@ -90,12 +90,29 @@ public class MainActivity extends Activity {
             // show alert
             builder1.show();
             myEditText.setText("");
+          // check for blank editText
+    	} else if (word1.trim().equals("")) {
+    		// create blank editText alert dialog
+    		AlertDialog.Builder builder2 = new AlertDialog.Builder(MainActivity.this);
+            builder2.setTitle("No Answer");
+            builder2.setMessage("You haven't entered an answer.");
+            builder2.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface arg0, int arg1) {
+                    // TODO Auto-generated method stub
+                    Toast.makeText(getApplicationContext(), "Give it a shot", Toast.LENGTH_LONG).show();
+                }
+            });
+            
+         // show alert
+            builder2.show();
+            myEditText.setText("");
     	} else {
     		// create incorrect scramble alert dialog
-    		AlertDialog.Builder builder2 = new AlertDialog.Builder(MainActivity.this);
-            builder2.setTitle("Incorrect");
-            builder2.setMessage("You've unscrambled the word incorrectly.");
-            builder2.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    		AlertDialog.Builder builder3 = new AlertDialog.Builder(MainActivity.this);
+            builder3.setTitle("Incorrect");
+            builder3.setMessage("You've unscrambled the word incorrectly.");
+            builder3.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface arg0, int arg1) {
                     // TODO Auto-generated method stub
@@ -111,7 +128,7 @@ public class MainActivity extends Activity {
             });
             
          // show alert
-            builder2.show();
+            builder3.show();
             myEditText.setText("");
     	}
     }
@@ -119,10 +136,10 @@ public class MainActivity extends Activity {
     	if (gameOver == true) {
 
 	    	// create game over alert dialog
-			AlertDialog.Builder builder3 = new AlertDialog.Builder(MainActivity.this);
-	        builder3.setTitle("Game Over");
-	        builder3.setMessage("You total score is " + score + " out of 7. Type \"view\" into the text box and submit to view the list of correctly unscrambled words.");
-	        builder3.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+			AlertDialog.Builder builder4 = new AlertDialog.Builder(MainActivity.this);
+	        builder4.setTitle("Game Over");
+	        builder4.setMessage("You total score is " + score + " out of 7. Type \"view\" into the text box and submit to view the list of correctly unscrambled words.");
+	        builder4.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 	            @Override
 	            public void onClick(DialogInterface arg0, int arg1) {
 	                // TODO Auto-generated method stub
@@ -131,7 +148,7 @@ public class MainActivity extends Activity {
 	        });
 	        
 	     // show alert
-	        builder3.show();
+	        builder4.show();
 	        // reset defaults
 	        count = 0;
 	        score = 0;
