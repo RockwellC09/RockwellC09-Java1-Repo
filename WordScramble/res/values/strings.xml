@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Word Scramble</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="intro">Unscramble the word.</string>
+    <string name="sub">Submit</string>
+    <string name="score">0/7 Correct</string>
+
+</resources>

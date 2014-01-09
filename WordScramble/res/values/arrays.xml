@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scr_words">
+    	<item>pgmnorraimg</item>
+    	<item>asvarpcijt</item>
+    	<item>uyjeqr</item>
+    	<item>idnoadr</item>
+    	<item>gbdeu</item>
+    	<item>ouitfncn</item>
+    	<item>abeslvari</item>
+	</string-array>
+	<string-array name="unscr_words">
+    	<item>programming</item>
+    	<item>javascript</item>
+    	<item>jquery</item>
+    	<item>android</item>
+    	<item>debug</item>
+    	<item>function</item>
+    	<item>variables</item>
+	</string-array>
+</resources>
