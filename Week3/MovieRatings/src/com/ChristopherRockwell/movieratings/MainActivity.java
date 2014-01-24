@@ -1,10 +1,11 @@
-package getRatingsPackage;
+package com.ChristopherRockwell.movieratings;
+
+import getRatingsPackage.getRating;
+import getRatingsPackage.getRating.getData;
 
 import java.util.ArrayList;
 
 import com.ChristopherRockwell.movieratings.R;
-import com.ChristopherRockwell.movieratings.getRating;
-import com.ChristopherRockwell.movieratings.getRating.getData;
 
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;

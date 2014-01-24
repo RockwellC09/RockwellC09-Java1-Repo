@@ -1,9 +1,8 @@
 // Christopher Rockwell
 // read JSON data from rotten tomatoes api and set proper information to the UI 
 
-package com.ChristopherRockwell.movieratings;
+package getRatingsPackage;
 
-import getRatingsPackage.MainActivity;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -14,6 +13,8 @@ import java.net.URLConnection;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.ChristopherRockwell.movieratings.MainActivity;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
