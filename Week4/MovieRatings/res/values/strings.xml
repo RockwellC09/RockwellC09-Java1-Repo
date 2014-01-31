@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Ratings</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bad_string">This movie gets a bronze ribbon.</string>
+    <string name="good_string">This movie gets a silver ribbon.</string>
+    <string name="great_string">This movie gets a gold ribbon.</string>
+    <string name="btn_text">Get Movie Rating</string>
+    <string name="dummy_text">This dummy text.</string>
+
+</resources>

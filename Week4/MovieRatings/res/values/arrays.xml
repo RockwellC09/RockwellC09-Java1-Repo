@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+		<item >Captain Phillips</item>
+		<item >Despicable Me 2</item>
+		<item >The Lone Ranger</item>
+	</string-array>
+</resources>
